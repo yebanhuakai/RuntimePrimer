@@ -13,6 +13,10 @@
 		45F8D9E01F8C6D9600DC606F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45F8D9DF1F8C6D9600DC606F /* Assets.xcassets */; };
 		45F8D9E31F8C6D9600DC606F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F8D9E11F8C6D9600DC606F /* LaunchScreen.storyboard */; };
 		45F8D9E61F8C6D9600DC606F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F8D9E51F8C6D9600DC606F /* main.m */; };
+		45F8D9EE1F8C6DEB00DC606F /* ClassA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F8D9ED1F8C6DEB00DC606F /* ClassA.swift */; };
+		45F8D9F51F8C6DFD00DC606F /* Message+Association.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F8D9F21F8C6DFC00DC606F /* Message+Association.m */; };
+		45F8D9F61F8C6DFD00DC606F /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F8D9F31F8C6DFC00DC606F /* Message.m */; };
+		45F8D9F71F8C6DFD00DC606F /* MessageForwarding.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F8D9F41F8C6DFD00DC606F /* MessageForwarding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		45F8D9E21F8C6D9600DC606F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45F8D9E41F8C6D9600DC606F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45F8D9E51F8C6D9600DC606F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45F8D9EC1F8C6DEA00DC606F /* RuntimePrimer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RuntimePrimer-Bridging-Header.h"; sourceTree = "<group>"; };
+		45F8D9ED1F8C6DEB00DC606F /* ClassA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassA.swift; sourceTree = "<group>"; };
+		45F8D9EF1F8C6DFC00DC606F /* Message+Association.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Message+Association.h"; sourceTree = "<group>"; };
+		45F8D9F01F8C6DFC00DC606F /* Message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		45F8D9F11F8C6DFC00DC606F /* MessageForwarding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageForwarding.h; sourceTree = "<group>"; };
+		45F8D9F21F8C6DFC00DC606F /* Message+Association.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Message+Association.m"; sourceTree = "<group>"; };
+		45F8D9F31F8C6DFC00DC606F /* Message.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		45F8D9F41F8C6DFD00DC606F /* MessageForwarding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageForwarding.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +74,19 @@
 				45F8D9D71F8C6D9600DC606F /* AppDelegate.m */,
 				45F8D9D91F8C6D9600DC606F /* ViewController.h */,
 				45F8D9DA1F8C6D9600DC606F /* ViewController.m */,
+				45F8D9F01F8C6DFC00DC606F /* Message.h */,
+				45F8D9F31F8C6DFC00DC606F /* Message.m */,
+				45F8D9EF1F8C6DFC00DC606F /* Message+Association.h */,
+				45F8D9F21F8C6DFC00DC606F /* Message+Association.m */,
+				45F8D9F11F8C6DFC00DC606F /* MessageForwarding.h */,
+				45F8D9F41F8C6DFD00DC606F /* MessageForwarding.m */,
+				45F8D9ED1F8C6DEB00DC606F /* ClassA.swift */,
 				45F8D9DC1F8C6D9600DC606F /* Main.storyboard */,
 				45F8D9DF1F8C6D9600DC606F /* Assets.xcassets */,
 				45F8D9E11F8C6D9600DC606F /* LaunchScreen.storyboard */,
 				45F8D9E41F8C6D9600DC606F /* Info.plist */,
 				45F8D9E51F8C6D9600DC606F /* main.m */,
+				45F8D9EC1F8C6DEA00DC606F /* RuntimePrimer-Bridging-Header.h */,
 			);
 			path = RuntimePrimer;
 			sourceTree = "<group>";
@@ -102,6 +122,7 @@
 				TargetAttributes = {
 					45F8D9D21F8C6D9600DC606F = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -143,7 +164,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				45F8D9DB1F8C6D9600DC606F /* ViewController.m in Sources */,
+				45F8D9F71F8C6DFD00DC606F /* MessageForwarding.m in Sources */,
+				45F8D9F61F8C6DFD00DC606F /* Message.m in Sources */,
 				45F8D9E61F8C6D9600DC606F /* main.m in Sources */,
+				45F8D9F51F8C6DFD00DC606F /* Message+Association.m in Sources */,
+				45F8D9EE1F8C6DEB00DC606F /* ClassA.swift in Sources */,
 				45F8D9D81F8C6D9600DC606F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,12 +303,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FKVD858LHT;
 				INFOPLIST_FILE = RuntimePrimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Labearch.RuntimePrimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RuntimePrimer/RuntimePrimer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -292,12 +321,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FKVD858LHT;
 				INFOPLIST_FILE = RuntimePrimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Labearch.RuntimePrimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RuntimePrimer/RuntimePrimer-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
