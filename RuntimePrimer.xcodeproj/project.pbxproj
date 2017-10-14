@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		453E64F41F8F79360069C8D7 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 453E64F31F8F79360069C8D7 /* Father.m */; };
+		453E64F71F8F794A0069C8D7 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 453E64F61F8F794A0069C8D7 /* Son.m */; };
 		45F8D9D81F8C6D9600DC606F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F8D9D71F8C6D9600DC606F /* AppDelegate.m */; };
 		45F8D9DB1F8C6D9600DC606F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F8D9DA1F8C6D9600DC606F /* ViewController.m */; };
 		45F8D9DE1F8C6D9600DC606F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F8D9DC1F8C6D9600DC606F /* Main.storyboard */; };
@@ -20,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		453E64F21F8F79360069C8D7 /* Father.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
+		453E64F31F8F79360069C8D7 /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
+		453E64F51F8F794A0069C8D7 /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
+		453E64F61F8F794A0069C8D7 /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
 		45F8D9D31F8C6D9600DC606F /* RuntimePrimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuntimePrimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F8D9D61F8C6D9600DC606F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		45F8D9D71F8C6D9600DC606F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +80,10 @@
 				45F8D9D71F8C6D9600DC606F /* AppDelegate.m */,
 				45F8D9D91F8C6D9600DC606F /* ViewController.h */,
 				45F8D9DA1F8C6D9600DC606F /* ViewController.m */,
+				453E64F21F8F79360069C8D7 /* Father.h */,
+				453E64F31F8F79360069C8D7 /* Father.m */,
+				453E64F51F8F794A0069C8D7 /* Son.h */,
+				453E64F61F8F794A0069C8D7 /* Son.m */,
 				45F8D9F01F8C6DFC00DC606F /* Message.h */,
 				45F8D9F31F8C6DFC00DC606F /* Message.m */,
 				45F8D9EF1F8C6DFC00DC606F /* Message+Association.h */,
@@ -168,6 +178,8 @@
 				45F8D9F61F8C6DFD00DC606F /* Message.m in Sources */,
 				45F8D9E61F8C6D9600DC606F /* main.m in Sources */,
 				45F8D9F51F8C6DFD00DC606F /* Message+Association.m in Sources */,
+				453E64F41F8F79360069C8D7 /* Father.m in Sources */,
+				453E64F71F8F794A0069C8D7 /* Son.m in Sources */,
 				45F8D9EE1F8C6DEB00DC606F /* ClassA.swift in Sources */,
 				45F8D9D81F8C6D9600DC606F /* AppDelegate.m in Sources */,
 			);

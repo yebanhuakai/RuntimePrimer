@@ -21,6 +21,7 @@
  */
 - (void)setAssociatedObject:(id)associatedObject {
     objc_setAssociatedObject(self, @selector(associatedObject), associatedObject, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    
 }
 
 /*
@@ -28,6 +29,13 @@
  */
 - (id)associatedObject
 {
+    return objc_getAssociatedObject(self, _cmd);//_cmd表示当前调用方法，其实它就是一个方法选择器SEL。一般用于判断方法名或在Associated Objects中唯一标识键名
+}
+
+- (void)setString:(NSString *)string {
+  objc_setAssociatedObject(self, @selector(string), string, OBJC_ASSOCIATION_RETAIN_NONATOMIC);}
+
+- (NSString *)string {
     return objc_getAssociatedObject(self, _cmd);//_cmd表示当前调用方法，其实它就是一个方法选择器SEL。一般用于判断方法名或在Associated Objects中唯一标识键名
 }
 

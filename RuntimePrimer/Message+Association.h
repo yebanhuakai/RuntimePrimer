@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic) id associatedObject;
 
+@property (nonatomic, copy) NSString *string;
+
 @end
